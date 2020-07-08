@@ -1,4 +1,4 @@
-var mail = prompt('Inserisci il tuo indirizzo e-mail')
+var mail = prompt('Sign in with your email address')
 
 var registered = [
     'pincopallo@boolean.it',
@@ -21,3 +21,10 @@ for (var i = 0; i <registered.length; i++) {
 
 console.log(registered);
 console.log(result);
+
+if (result === true) {
+  console.log("accesso consentito");
+} else {
+  console.log("accesso bloccato");
+  document.getElementById("resultjsceck").style.visibility='visible'
+}
