@@ -14,15 +14,20 @@
 var dadoGiocatore = (Math.floor(Math.random()*6)+1);
 var dadoComputer = (Math.floor(Math.random()*6)+1);
 
+document.getElementById('dadogiocatore').innerHTML = 'Utente: ' + dadoGiocatore;
+document.getElementById('dadocomputer').innerHTML = 'Computer: ' + dadoComputer;
+
 console.log('Il tuo punteggio ' + dadoGiocatore);
 console.log('Il punteggio del computer ' + dadoComputer);
 
-var risultato = 'Hai vinto'
+var result = 'Hai vinto'
 
 if (dadoGiocatore == dadoComputer) {
-    risultato = 'Pareggio';
-    console.log(risultato);
+    result = 'Pareggio';
+    console.log(result);
 } else if (dadoGiocatore < dadoComputer) {
-    risultato = 'Hai perso';
-    console.log(risultato);
+    result = 'Hai perso';
+    console.log(result);
 }
+
+document.getElementById('result').innerHTML = result;
