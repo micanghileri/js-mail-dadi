@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    font-family: 'Muli', sans-serif;
+}
+
+.scheda-gioco {
+    height: 300px;
+    width: 400px;
+    background-color: #4169E1;
+    box-shadow: 0 0 50px #191970;
+    border-radius: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    position: relative;
+    text-align: center;
+}
+
+.scheda-gioco h3 {
+    font-size: 40px;
+    font-weight: bolder;
+    padding-bottom: 50px;
+}
+
+.scheda-gioco img {
+    height: 50px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    filter: grayscale(1);
+}
+
+#result,
+#result2 {
+    font-size: 25px;
+    color: #F5FFFA;
+    font-weight: bolder;
+    padding-top: 40px;
+    z-index: 2;
+}
+
+#dadogiocatore,
+#dadigiocatore,
+#dadocomputer,
+#dadicomputer {
+    font-size: 20px;
+}

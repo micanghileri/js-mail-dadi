@@ -31,3 +31,24 @@ if (dadoGiocatore == dadoComputer) {
 }
 
 document.getElementById('result').innerHTML = result;
+
+var dadiGiocatore = (Math.floor(Math.random()*12)+1);
+var dadiComputer = (Math.floor(Math.random()*12)+1);
+
+document.getElementById('dadigiocatore').innerHTML = 'Utente: ' + dadiGiocatore;
+document.getElementById('dadicomputer').innerHTML = 'Computer: ' + dadiComputer;
+
+console.log('Il tuo punteggio ' + dadiGiocatore);
+console.log('Il punteggio del computer ' + dadiComputer);
+
+var result2 = 'Hai vinto'
+
+if (dadiGiocatore == dadiComputer) {
+    result2 = 'Pareggio';
+    console.log(result);
+} else if (dadiGiocatore < dadiComputer) {
+    result2 = 'Hai perso';
+    console.log(result2);
+}
+
+document.getElementById('result2').innerHTML = result2;
